@@ -1,0 +1,13 @@
+
+    <h1>Użytkownicy</h1>
+    <ul>
+        <% users.forEach(user => { %>
+            <li>
+                <a href="/profile/<%= user.id %>">- <%= user.name %> <%= user.email %></a>
+                <button>
+                    <a href="/profile/<%= user.id %>/szczegoly">Szczegóły</a>
+                </button>
+            </li>
+        <% }); %>
+        
+    </ul>
